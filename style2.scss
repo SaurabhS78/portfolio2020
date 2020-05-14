@@ -1,0 +1,126 @@
+@import "variables";
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+
+}
+
+
+.slide {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(10, 10vw);
+    grid-template-rows: repeat(10, 10vh);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 800vw;
+    transform:  rotate(90deg) translateY(-100vh);
+    transform-origin: top left;
+}
+
+.one {
+    background-color: red;
+}
+.two {
+    background-color: yellow;
+}
+.three {
+    background-color: blue;
+}
+.four {
+    background-color: green;
+}
+.outer-wrapper {
+    width: 100vh;
+    height: 100vw;
+    transform:  rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+
+.hi {
+    background-color: $bg-color;
+    .navcircle {
+        grid-column: 1 / 2 ;
+        grid-row: 1 / 3;
+    }
+    .hisvg {
+        grid-column: 2 / 4 ;
+        grid-row: 4 / 6 ;
+        svg {overflow: visible;}
+    }
+    .hello-il {
+        grid-column: 5 / 9 ;
+        grid-row: 3 / 8 ;
+    }
+    h2 {
+        grid-column: 2 / 4;
+        grid-row: 7 / 8 ;
+        font-family: $ff2;
+        font-size: 3rem;
+        font-weight: normal;
+        line-height: 5rem;
+    }
+    .arrow {
+        grid-column: 10 / 11 ;
+        grid-row: 9 / 10 ;
+    }
+    h1 {
+        grid-column: 2 / 7;
+        grid-row: 8 / 9 ;
+        span {
+            background-color: $y1;
+            padding: 0 0.3rem 0 0.3rem;
+            margin-right: 0.3rem;
+        }
+        font-family: $ff1;
+        font-weight: 600;
+        font-size: 3rem;
+        line-height: 5rem;
+        letter-spacing: 0.04em;
+    }
+}
+
+#H {
+    animation: rise 3s ease-in-out infinite alternate;
+}
+#I {
+    animation: rise 3s ease-in-out 1s infinite alternate;
+}
+#shadow {
+    animation: shadow 3s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+
+
+@keyframes rise {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-30px);
+    }
+    
+}
+@keyframes shadow {
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(0.8);
+    }
+    
+}
