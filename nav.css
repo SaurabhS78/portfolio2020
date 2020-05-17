@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&family=Nunito:wght@400;600;700&display=swap');
 .menu {
     font-family: 'Nunito', sans-serif;
+    font-size: 1.3rem;
     height: 70px;
     width: 70px;
     left: 20px;
@@ -43,7 +44,7 @@
   .menu span i {
     position: absolute;
     transform-origin: 50% 50%;
-    width: 45%;
+    width: 50%;
     height: 2px;
     left: 0;
     right: 0;
@@ -74,9 +75,7 @@
   .menu .menuContent ul li {
     
     display: inline-block;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-top: 15px;
+    margin: 1rem 2.5rem;
     color: #ffffff;
     transition: opacity 0.3s ease 0.3s;
     cursor: pointer;
