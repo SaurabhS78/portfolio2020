@@ -46,6 +46,7 @@
         .vis {height: 50vh;}
     }
     .skills {
+        .block {height: 5vw; width: 5vw;}
         .ski {margin-top: 30px;}
         .txtskill1 {margin-bottom: 30px;}
     }
@@ -67,6 +68,7 @@
         }
         .type {display: none;}
     }
+    .org #desc p {float: left !important;}
     .contact {
         margin: 0 !important;
         padding: 30px;

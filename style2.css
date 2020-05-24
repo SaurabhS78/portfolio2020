@@ -544,6 +544,10 @@
   .work .vis {
     height: 50vh;
   }
+  .skills .block {
+    height: 5vw;
+    width: 5vw;
+  }
   .skills .ski {
     margin-top: 30px;
   }
@@ -579,6 +583,9 @@
   }
   .quote .type {
     display: none;
+  }
+  .org #desc p {
+    float: left !important;
   }
   .contact {
     margin: 0 !important;
@@ -1034,7 +1041,7 @@ h3 {
 .org #desc p {
   float: right;
   margin: 1rem;
-  color: #FFDE00;
+  color: #6B6B6B;
   font-family: "Nunito Sans", sans-serif;
   letter-spacing: 0.15rem;
 }
