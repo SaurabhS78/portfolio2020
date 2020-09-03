@@ -1,0 +1,229 @@
+#H {
+    animation: rise 3s ease-in-out infinite alternate;
+}
+#I {
+    animation: rise 3s ease-in-out 1s infinite alternate;
+}
+#shadow {
+    animation: shadow 3s ease-in-out infinite alternate;
+    transform-origin: center;
+}
+#hand {
+    animation: wave 2s ease-in-out infinite alternate;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+#head {
+    animation: wave 2s ease-in-out infinite alternate-reverse;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+#smoke{
+    animation: smoke 3s ease-out infinite;
+    transform-box: fill-box;
+    transform-origin: bottom;
+}
+#rect {
+    animation: arrow 1.5s ease-in-out infinite alternate;
+}
+#arrow_2 {
+    animation: arrow 1.5s ease-in-out infinite alternate-reverse;
+}
+#hat {
+    animation: rise 2s ease-in-out infinite alternate;
+}
+#certi {
+    animation: wave 2s ease-in-out infinite alternate-reverse;
+    transform-box: fill-box;
+}
+#vishand {
+    animation: wave2 2s ease-in-out infinite alternate;
+    transform-box: fill-box;
+    transform-origin: right top;
+}
+#visionary{
+    #shape {
+        animation: rotY 3s linear infinite alternate-reverse;
+        transform-box: fill-box;
+        transform-origin: bottom;
+    }
+}
+#items {
+    animation: cycle 5s linear infinite;
+    transform-box: fill-box;
+    transform-origin: center center;
+}
+#projects {
+    #circle {
+        animation: cycle 5s linear infinite;
+        transform-box: fill-box;
+        transform-origin: center center;
+    }
+}
+.type {
+    color: $y1;
+    animation: type 6s steps(54) infinite;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 2px solid white;
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    height: fit-content;  
+}
+.stars {
+    #star1{ animation: twinkle 2s ease-in-out infinite alternate;}
+    #star2{ animation: twinkle 1.5s ease-in-out 1s infinite alternate;}
+    #star1{ animation: twinkle 2s ease-in-out 2s infinite alternate;}
+}
+
+.dreamer {
+    svg {animation: fill 3.5s ease-in infinite;}
+    path:nth-child(1) {
+        stroke-dasharray: 313;
+        stroke-dashoffset: 313;
+        animation: line 3.5s ease forwards infinite;
+    }
+    path:nth-child(2) {
+        stroke-dasharray: 309;
+        stroke-dashoffset: 309;
+        animation: line 3.5s ease forwards infinite;
+    }
+    path:nth-child(3) {
+        stroke-dasharray: 269;
+        stroke-dashoffset: 269;
+        animation: line 3.5s ease forwards infinite;
+    }
+    path:nth-child(4) {
+        stroke-dasharray: 279;
+        stroke-dashoffset: 279;
+        animation: line 3.5s ease forwards infinite;
+    }
+    path:nth-child(5) {
+        stroke-dasharray: 429;
+        stroke-dashoffset: 429;
+        animation: line 3.5s ease forwards infinite;
+    }
+    path:nth-child(6) {
+        stroke-dasharray: 269;
+        stroke-dashoffset: 269;
+        animation: line 3.5s ease forwards infinite;
+    }
+    path:nth-child(7) {
+        stroke-dasharray: 309;
+        stroke-dashoffset: 309;
+        animation: line 3.5s ease forwards infinite;
+    }
+}
+
+@keyframes fill {
+    0% {fill: transparent;}
+    80% {fill: transparent;}
+    100% {fill: white;}
+}
+@keyframes line {
+    to { stroke-dashoffset: 0;}
+}
+
+@keyframes twinkle {
+    from {opacity: 1;}
+    to {opacity: 0;}
+}
+
+@keyframes type {
+    0% {
+        width: 0ch;
+        border-right: 2px solid white;
+    }
+    60% {
+        width: 50ch;
+        border-right: 2px solid white;
+    }
+    70% {
+        width: 50ch;
+        border-right: none;
+    }
+    80% {
+        width: 50ch;
+        border-right: 2px solid white;
+    }
+    90% {
+        width: 50ch;
+        border-right: none;
+    }
+    100% {
+        width: 50ch;
+        border-right: 2px solid white;
+    }
+    
+
+    
+}
+@keyframes cycle {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes rotY {
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(180deg);
+    }
+}
+@keyframes wave2 {
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(5deg);
+    }
+}
+@keyframes arrow {
+    from{
+        transform: translateX(0px);
+    }
+    to{
+        transform: translateX(-5px);
+    }
+}
+@keyframes smoke{
+    from{
+        transform: translateY(0px) scale(0.5);
+        opacity: 1;
+    }
+    to{
+        transform: translateY(-30px) scale(2);
+        opacity: 0;
+    }
+}
+@keyframes wave {
+    from{
+        transform: rotateZ(-10deg);
+    }
+    to{
+        transform: rotateZ(0deg);
+    }
+}
+@keyframes rise {
+    from{
+        transform: translateY(0px);
+    }
+    to{
+        transform: translateY(-30px);
+    }
+    
+}
+@keyframes shadow {
+    from{
+        transform: scaleX(1);
+    }
+    to{
+        transform: scaleX(0.8);
+    }
+    
+}

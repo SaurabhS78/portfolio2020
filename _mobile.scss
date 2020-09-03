@@ -1,0 +1,205 @@
+@media only screen and (max-width: 900px) {
+  .menu,
+  .navcircle {
+    display: none;
+  }
+  .outer-wrapper {
+    width: 100vw;
+    height: 800vh;
+    position: absolute;
+    overflow-x: hidden;
+  }
+
+  .slide {
+    margin: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hi {
+    .hisvg {
+      margin: 60px;
+      svg {
+        margin-left: 20px;
+      }
+      order: 1;
+    }
+    h2 {
+      order: 2;
+      font-size: 2rem;
+    }
+    h1 {
+      order: 3;
+      margin-top: 10px;
+      font-size: 2rem;
+    }
+    .hello-il {
+      order: 4;
+      margin: 30px;
+    }
+    .arrow {
+      display: none;
+    }
+  }
+  .about {
+    .hat {
+      order: 2;
+      width: 60vw;
+    }
+    h3 {
+      order: 3;
+    }
+    h1 {
+      order: 4;
+      font-size: 1.5rem !important;
+    }
+    .iitr {
+      order: 5;
+    }
+  }
+  .work {
+    .text {
+      margin: 60px 0 50px 0;
+      h1 {
+        font-size: 1.3rem !important;
+        line-height: 4rem;
+      }
+    }
+    .vis {
+      height: 50vh;
+    }
+  }
+  .skills {
+    .block {
+      height: 5vw;
+      width: 5vw;
+    }
+    .ski {
+      margin-top: 30px;
+    }
+    .txtskill1 {
+      margin-bottom: 30px;
+    }
+  }
+  .org {
+    #desc {
+      height: 60vh;
+      margin-top: 10px;
+    }
+    .block {
+      height: 5vw;
+      width: 5vw;
+    }
+    h2 {
+      font-size: 1.6rem !important;
+    }
+  }
+  .quote {
+    margin: 0 !important;
+    .banner {
+      background-image: linear-gradient(180deg, white, transparent) !important;
+      height: 50vh !important;
+    }
+    .boy {
+      height: 30vh;
+      img {
+        height: 100%;
+        width: auto;
+      }
+      margin: 50px;
+    }
+    .type {
+      display: none;
+    }
+  }
+  .org #desc p {
+    float: left !important;
+  }
+  .contact {
+    margin: 0 !important;
+    padding: 30px;
+    .dreamer {
+      margin: 50px 0 80px 0;
+    }
+    .me {
+      height: 60vh;
+      width: 100vw;
+      margin-bottom: 50px;
+    }
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}
+// For tablets
+@media only screen and (min-width: 500px) and (max-width: 900px) {
+  .slide {
+    margin-left: 20vw;
+    margin-right: 20vw;
+  }
+}
+
+//quick nav
+a {
+  text-decoration: none;
+}
+
+.mobile .header {
+  background-color: black;
+  color: white;
+  z-index: 999;
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  border-radius: 50px;
+}
+.menu-toggle {
+  padding: 0.75rem;
+}
+.line {
+  width: 30px;
+  height: 2px;
+  margin: 10px 0;
+  background-color: #ffde00;
+}
+.mobile-nav ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  height: 100%;
+}
+.mobile-one .mobile-nav {
+  background-color: black;
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  transform: translate(-100%, 0);
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  position: fixed;
+  z-index: 999;
+}
+.mobile-nav h2 {
+  padding: 25px 20px;
+  color: white;
+  font-size: 2rem;
+  font-family: $ff1;
+  letter-spacing: 0.2rem;
+}
+
+.mobile-one .mobile-nav li a {
+  color: #ffde00;
+  display: block;
+  padding: 35px 20px;
+  font-size: 1.5rem;
+  font-family: $ff2;
+  letter-spacing: 0.2rem;
+}
+.mobile-one .mobile-nav li a:hover {
+  background-color: #23252b;
+  color: #fff;
+  border-left: 3px solid #ffde00;
+}
